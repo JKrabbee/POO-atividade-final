@@ -48,4 +48,17 @@ export class User extends Base {
             user.showTweets()
         })
     }
+
+    public show() {
+        console.log(`
+        Name: ${this._name}
+        Usarname: ${this._username}
+        E-mail:${this._email}
+        Seguidores:`);
+
+        this._following.forEach((seguindo) => {
+            console.log(`@${seguindo.username}`);
+        })
+        
+    }
 }

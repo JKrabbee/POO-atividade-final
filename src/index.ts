@@ -36,3 +36,4 @@ tweet2.reply('Azar!', usuarios[2])
 
 
 usuarios[0].showFeed()
+usuarios[0].show()
